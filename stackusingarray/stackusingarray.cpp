@@ -13,5 +13,6 @@ public:
 		top = -1;
 	}
 
-}; 
- 
+	void push() {
+	}
+};
