@@ -19,7 +19,7 @@ public:
 		cin >> element;
 		if (top == 4) { //step 1
 			cout << "Number of data excedeed the list." << endl;
-			return;
+			return ;
 		}
 
 		top++; //step 2
@@ -27,7 +27,7 @@ public:
 		cout << endl;
 		cout << element << " ditambahkan(pushed)" << endl;
 
-
+		
 	}
 
 	void pop() {
@@ -46,5 +46,14 @@ public:
 	}
 
 	void display() {
+		if (empty()) {
+			cout << "\nStack is empty." << endl;
+		}
+		else {
+			for (int tmp = top; tmp >= 0; tmp--) {
+				cout << stack_array[tmp] << endl;
+			}
+		}
 	}
 };
+
